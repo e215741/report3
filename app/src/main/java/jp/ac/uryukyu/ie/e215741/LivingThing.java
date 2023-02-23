@@ -59,14 +59,14 @@ public class LivingThing {
         hitPoint -= damage;
         if( hitPoint <= 0 ) {
             dead = true;
-            System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", name);
+            System.out.printf("%sは倒れた\n", name);
         }
     }
     /**
      * メンバ変数「hitPoint」を取得するメソッド
      * ＠return 取得したいhitPoint
      */
-    public int getHintPoint(){
+    public int getHitPoint(){
         return this.hitPoint;
     }
 }
